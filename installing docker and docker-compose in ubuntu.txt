@@ -16,6 +16,6 @@ sudo apt install docker-ce
 
 sudo systemctl status docker
 
-usermod -aG docker $USER
+sudo usermod -aG docker $USER && newgrp docker
 
 apt install docker-compose -y
